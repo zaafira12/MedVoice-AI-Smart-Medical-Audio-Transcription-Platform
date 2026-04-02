@@ -33,10 +33,10 @@ Login-based access ensures personalized and secure usage.
 
 ##  User Interface
 
-✔ Modern split-screen dashboard
-✔ Left panel: Audio upload & controls
-✔ Right panel: Live transcription output
-✔ Clean, responsive, and user-friendly design
+* Modern split-screen dashboard
+* Left panel: Audio upload & controls
+* Right panel: Live transcription output
+* Clean, responsive, and user-friendly design
 
 ---
 
@@ -62,7 +62,7 @@ Login-based access ensures personalized and secure usage.
 
 ---
 
-## ⚙️ How to Run Locally
+##  How to Run Locally
 
 ```bash
 # Clone the repository
