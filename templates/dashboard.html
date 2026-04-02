@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medical Translator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+        <h2>🎧 Upload Medical Audio</h2>
+
+        <label class="file-btn">
+            📁 Choose Audio File
+            <input type="file" id="audioUpload" hidden>
+            <audio id="audioPlayer" controls style="width: 100%; display: none; margin-top: 10px;"></audio>
+        </label>
+
+        <p id="fileName">No file selected</p>
+
+        <button onclick="uploadAudio()" class="transcribe-btn">
+            🚀 Transcribe Audio
+        </button>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <button onclick="goToHistory()" class="history-btn">
+            📜 View History
+        </button>
+    </div>
+
+    <h2>📄 Transcription Output</h2>
+
+    <div id="output" class="output-box">
+        Your transcription will appear here...
+    </div>
+
+    <button class="download-btn" onclick="downloadText()">
+        📥 Download Transcript
+    </button>
+
+</div>
+
+</div>
+
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
