@@ -1,0 +1,7 @@
+uploads/
+*.wav
+*.mp3
+*.db
+__pycache__/
+*.pyc
+.env
