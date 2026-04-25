@@ -1,0 +1,319 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glass Card */
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 50px;
+    width: 450px;   /* 🔥 increased */
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Title */
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-box input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* Button */
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #00c6ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-box button:hover {
+    background: #0072ff;
+}
+
+/* Quote */
+.quote {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #eee;
+}
+
+/* Dashboard Layout */
+.container {
+    width: 90%;
+    max-width: 1200px;   
+    margin: auto;
+}
+
+/* Cards */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px auto;
+    width: 700px;   /* 🔥 increased width */
+    max-width: 100%;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* File Input */
+input[type="file"] {
+    margin: 15px 0;
+    color: white;
+}
+
+/* Output Text */
+#output {
+    width: 100%;
+    max-width: 1000px;     /* 🔥 controls text width */
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+
+    font-size: 18px;
+    line-height: 1.8;      /* 🔥 better readability */
+
+    word-wrap: break-word;
+}
+
+.output-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Upload Button */
+.upload-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #00c6ff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.upload-btn:hover {
+    background: #0072ff;
+}
+
+.upload-btn, .transcribe-btn {
+    width: 80%;
+}
+/* File name */
+#fileName {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #eee;
+}
+
+/* Transcribe Button */
+.transcribe-btn {
+    padding: 14px 25px;
+    font-size: 16px;
+    background: #28a745;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.transcribe-btn:hover {
+    background: #218838;
+}
+
+/* Back Button */
+.back-btn {
+    padding: 8px 15px;
+    background: #555;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* History Cards */
+.history-card {
+    background: rgba(0,0,0,0.25);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 10px;
+    max-width: 900px;
+    text-align: left;
+    color: #ffffff;   /* 🔥 bright white text */
+    font-size: 17px;
+    line-height: 1.6;
+}
+h1 {
+    color: #ffffff;
+}
+
+#historyContainer {
+    margin-top: 20px;
+}
+
+.clear-btn {
+    padding: 10px 20px;
+    background: #e53935;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.clear-btn:hover {
+    background: #c62828;
+}
+
+/* MAIN LAYOUT */
+.main-container {
+    display: flex;
+    gap: 30px;
+    padding: 40px;
+    justify-content: center;
+}
+
+/* LEFT SIDE */
+.left-panel {
+    width: 40%;
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* RIGHT SIDE */
+.right-panel {
+    width: 60%;
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* FILE BUTTON */
+.file-btn {
+    display: block;
+    background: #00bcd4;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* TRANSCRIBE BUTTON */
+.transcribe-btn {
+    width: 100%;
+    padding: 15px;
+    background: #28a745;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* OUTPUT BOX */
+.output-box {
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 15px;
+    min-height: 250px;
+    color: white;
+    line-height: 1.7;
+    overflow-y: auto;
+}
+
+/* DOWNLOAD BUTTON */
+.download-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: orange;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+    }
+}
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.history-btn {
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.history-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+.history-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.download-btn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #ff9800;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#audioPlayer {
+    margin-top: 15px;
+    border-radius: 10px;
+}
